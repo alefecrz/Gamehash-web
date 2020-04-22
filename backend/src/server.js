@@ -20,4 +20,5 @@ server.use(express.json());
 server.use('/files', express.static(path.resolve(__dirname, '..', 'uploads')));
 server.use(routes);
 
-server.listen(8081);
+server.listen(8081,()=> { console.log('🤖 Running in port 8081');
+});
